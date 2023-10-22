@@ -13,7 +13,35 @@
 		046AE6362AE4D2D100299BBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046AE6342AE4D2D100299BBF /* Main.storyboard */; };
 		046AE6382AE4D2D200299BBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046AE6372AE4D2D200299BBF /* Assets.xcassets */; };
 		046AE63B2AE4D2D200299BBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046AE6392AE4D2D200299BBF /* LaunchScreen.storyboard */; };
+		046AE64A2AE4D60700299BBF /* Commons.h in Headers */ = {isa = PBXBuildFile; fileRef = 046AE6492AE4D60700299BBF /* Commons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		046AE64D2AE4D60700299BBF /* Commons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 046AE6472AE4D60700299BBF /* Commons.framework */; };
+		046AE64E2AE4D60700299BBF /* Commons.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 046AE6472AE4D60700299BBF /* Commons.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		046AE6552AE4D66F00299BBF /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046AE6542AE4D66F00299BBF /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		046AE64B2AE4D60700299BBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 046AE6232AE4D2D100299BBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 046AE6462AE4D60700299BBF;
+			remoteInfo = Commons;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		046AE6522AE4D60700299BBF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				046AE64E2AE4D60700299BBF /* Commons.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		046AE62B2AE4D2D100299BBF /* MutilModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MutilModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +52,21 @@
 		046AE6372AE4D2D200299BBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		046AE63A2AE4D2D200299BBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		046AE63C2AE4D2D200299BBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046AE6472AE4D60700299BBF /* Commons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Commons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		046AE6492AE4D60700299BBF /* Commons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Commons.h; sourceTree = "<group>"; };
+		046AE6542AE4D66F00299BBF /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		046AE6282AE4D2D100299BBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046AE64D2AE4D60700299BBF /* Commons.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046AE6442AE4D60700299BBF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				046AE62D2AE4D2D100299BBF /* MutilModule */,
+				046AE6482AE4D60700299BBF /* Commons */,
 				046AE62C2AE4D2D100299BBF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				046AE62B2AE4D2D100299BBF /* MutilModule.app */,
+				046AE6472AE4D60700299BBF /* Commons.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,7 +108,36 @@
 			path = MutilModule;
 			sourceTree = "<group>";
 		};
+		046AE6482AE4D60700299BBF /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				046AE6532AE4D64C00299BBF /* Extensions */,
+				046AE6492AE4D60700299BBF /* Commons.h */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		046AE6532AE4D64C00299BBF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				046AE6542AE4D66F00299BBF /* UIViewExtension.swift */,
+			);
+			name = Extensions;
+			path = "Ễtnsion";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		046AE6422AE4D60700299BBF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046AE64A2AE4D60700299BBF /* Commons.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		046AE62A2AE4D2D100299BBF /* MutilModule */ = {
@@ -77,15 +147,35 @@
 				046AE6272AE4D2D100299BBF /* Sources */,
 				046AE6282AE4D2D100299BBF /* Frameworks */,
 				046AE6292AE4D2D100299BBF /* Resources */,
+				046AE6522AE4D60700299BBF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				046AE64C2AE4D60700299BBF /* PBXTargetDependency */,
 			);
 			name = MutilModule;
 			productName = MutilModule;
 			productReference = 046AE62B2AE4D2D100299BBF /* MutilModule.app */;
 			productType = "com.apple.product-type.application";
+		};
+		046AE6462AE4D60700299BBF /* Commons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 046AE64F2AE4D60700299BBF /* Build configuration list for PBXNativeTarget "Commons" */;
+			buildPhases = (
+				046AE6422AE4D60700299BBF /* Headers */,
+				046AE6432AE4D60700299BBF /* Sources */,
+				046AE6442AE4D60700299BBF /* Frameworks */,
+				046AE6452AE4D60700299BBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Commons;
+			productName = Commons;
+			productReference = 046AE6472AE4D60700299BBF /* Commons.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +189,10 @@
 				TargetAttributes = {
 					046AE62A2AE4D2D100299BBF = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					046AE6462AE4D60700299BBF = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -116,6 +210,7 @@
 			projectRoot = "";
 			targets = (
 				046AE62A2AE4D2D100299BBF /* MutilModule */,
+				046AE6462AE4D60700299BBF /* Commons */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +223,13 @@
 				046AE63B2AE4D2D200299BBF /* LaunchScreen.storyboard in Resources */,
 				046AE6382AE4D2D200299BBF /* Assets.xcassets in Resources */,
 				046AE6362AE4D2D100299BBF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046AE6452AE4D60700299BBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +246,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		046AE6432AE4D60700299BBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046AE6552AE4D66F00299BBF /* UIViewExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		046AE64C2AE4D60700299BBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 046AE6462AE4D60700299BBF /* Commons */;
+			targetProxy = 046AE64B2AE4D60700299BBF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		046AE6342AE4D2D100299BBF /* Main.storyboard */ = {
@@ -283,6 +401,7 @@
 		046AE6402AE4D2D200299BBF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -311,6 +430,7 @@
 		046AE6412AE4D2D200299BBF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -336,6 +456,69 @@
 			};
 			name = Release;
 		};
+		046AE6502AE4D60700299BBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 523H2KHR8P;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = playground.vn.Commons;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		046AE6512AE4D60700299BBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 523H2KHR8P;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = playground.vn.Commons;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -353,6 +536,15 @@
 			buildConfigurations = (
 				046AE6402AE4D2D200299BBF /* Debug */,
 				046AE6412AE4D2D200299BBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		046AE64F2AE4D60700299BBF /* Build configuration list for PBXNativeTarget "Commons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				046AE6502AE4D60700299BBF /* Debug */,
+				046AE6512AE4D60700299BBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

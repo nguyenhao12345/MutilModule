@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="JGf-qj-Sug" customClass="ImageCollectionViewCell" customModule="MutilModule" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="301" height="167"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yKn-Ss-nn4">
+                <rect key="frame" x="0.0" y="0.0" width="301" height="167"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3I-KB-OF7">
+                        <rect key="frame" x="0.0" y="0.0" width="301" height="167"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4ck-ZA-fqt">
+                                <rect key="frame" x="0.0" y="0.0" width="301" height="167"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="4ck-ZA-fqt" secondAttribute="bottom" id="6Xn-wS-ruL"/>
+                            <constraint firstItem="4ck-ZA-fqt" firstAttribute="leading" secondItem="Z3I-KB-OF7" secondAttribute="leading" id="Cih-Ju-paY"/>
+                            <constraint firstAttribute="trailing" secondItem="4ck-ZA-fqt" secondAttribute="trailing" id="Q4y-6x-BG0"/>
+                            <constraint firstItem="4ck-ZA-fqt" firstAttribute="top" secondItem="Z3I-KB-OF7" secondAttribute="top" id="uIv-lP-32m"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Z3I-KB-OF7" firstAttribute="leading" secondItem="yKn-Ss-nn4" secondAttribute="leading" id="9in-Fo-Wfd"/>
+                    <constraint firstAttribute="bottom" secondItem="Z3I-KB-OF7" secondAttribute="bottom" id="Ca9-tG-bAN"/>
+                    <constraint firstItem="Z3I-KB-OF7" firstAttribute="top" secondItem="yKn-Ss-nn4" secondAttribute="top" id="NwA-h3-9Eb"/>
+                    <constraint firstAttribute="trailing" secondItem="Z3I-KB-OF7" secondAttribute="trailing" id="pUC-Jy-Jq3"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <size key="customSize" width="301" height="167"/>
+            <connections>
+                <outlet property="thumbnail" destination="4ck-ZA-fqt" id="QP8-P9-gBo"/>
+            </connections>
+            <point key="canvasLocation" x="-498.47328244274809" y="-57.394366197183103"/>
+        </collectionViewCell>
+    </objects>
+</document>

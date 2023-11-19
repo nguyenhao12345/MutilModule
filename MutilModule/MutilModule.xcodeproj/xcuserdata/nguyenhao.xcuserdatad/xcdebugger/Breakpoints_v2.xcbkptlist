@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "9B2E4A63-B77C-460B-8D27-9714309534D2"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CE8064BD-A321-4D9A-8763-D0C2D7E37856"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MutilModule/Scene/Home/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "HomeViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "64C3CCCC-FDF5-4DC6-AEAB-A5D619DD1448"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MutilModule/Scenes/Te&#x301;t/TestViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "manageFailedNavigation(_:didFail:withError:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "64C3CCCC-FDF5-4DC6-AEAB-A5D619DD1448 - 5437f904c384b507"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MutilModule.TestViewcontroller.manageFailedNavigation(_: __C.WKWebView, didFail: Swift.Optional&lt;__C.WKNavigation&gt;, withError: Swift.Error) -&gt; ()"
+                  moduleName = "MutilModule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nguyenhao/Documents/VNPay/MutilModule/MutilModule/MutilModule/MutilModule/Scenes/Te%CC%81t/TestViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "320">
+               </Location>
+               <Location
+                  uuid = "64C3CCCC-FDF5-4DC6-AEAB-A5D619DD1448 - 5437f904c384b507"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MutilModule.TestViewcontroller.manageFailedNavigation(_: __C.WKWebView, didFail: Swift.Optional&lt;__C.WKNavigation&gt;, withError: Swift.Error) -&gt; ()"
+                  moduleName = "MutilModule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nguyenhao/Documents/VNPay/MutilModule/MutilModule/MutilModule/MutilModule/Scenes/Te%CC%81t/TestViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "240">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

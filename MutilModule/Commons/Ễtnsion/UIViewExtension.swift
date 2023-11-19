@@ -7,8 +7,10 @@
 
 import UIKit
 
-extension UIView {
-    public func print() {
-        Swift.print("\(self.frame.width)")
-    }
+public protocol ZoomAble: UIView {
+    func actionZoom(duration: TimeInterval, animation: @escaping VoidCallBack, completion: ((Bool) -> Void)?)
+}
+
+public extension UIView {
+
 }

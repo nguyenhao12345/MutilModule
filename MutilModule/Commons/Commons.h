@@ -14,5 +14,3 @@ FOUNDATION_EXPORT double CommonsVersionNumber;
 FOUNDATION_EXPORT const unsigned char CommonsVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Commons/PublicHeader.h>
-
-
